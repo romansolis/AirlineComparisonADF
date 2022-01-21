@@ -1,0 +1,42 @@
+{
+	"name": "dsAirlineMerged",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "blobstoragechrt7",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Merged",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "P1-Airline-Comparison_rev.xlsx",
+				"container": "airlinecomparison"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "Air_ID",
+				"type": "String"
+			},
+			{
+				"name": "Airline",
+				"type": "String"
+			},
+			{
+				"name": "Year",
+				"type": "String"
+			},
+			{
+				"name": "Region",
+				"type": "String"
+			},
+			{
+				"name": "Revenue",
+				"type": "String"
+			}
+		]
+	}
+}
