@@ -9,8 +9,8 @@
 		"type": "AzureSqlTable",
 		"schema": [],
 		"typeProperties": {
-			"schema": "scAirline",
-			"table": "tbAirline"
+			"schema": "dbo",
+			"table": "Airline1"
 		}
 	}
 }
